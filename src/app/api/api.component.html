@@ -1,0 +1,16 @@
+<h1>Jobs list</h1>
+
+<ul class="userList" *ngIf="jobs">
+  <li class="userItem" *ngFor="let job of jobs">
+    <p><strong>referencenumber: </strong>{{ job.referencenumber }}</p>
+    <p><strong>src: </strong>{{ job.src }}</p>
+    <p><strong>title: </strong>{{ job.title }}</p>
+    <p><strong>location: </strong>{{ job.location }}</p>
+    <p><strong>body: </strong>{{ job.body }}</p>
+    <p><strong>url: </strong>{{ job.url }}</p>
+    <p><strong>company: </strong>{{ job.company }}</p>
+
+  </li>
+
+</ul>
+
